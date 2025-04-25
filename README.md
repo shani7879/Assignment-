@@ -1,2 +1,25 @@
 # Assignment-
 Write a class Book with attributes title and author. Add a method to display book info.
+public class Book {
+    // Attributes
+    private String title;
+    private String author;
+
+    // Constructor
+    public Book(String title, String author) {
+        this.title = title;
+        this.author = author;
+    }
+
+    // Method to display book information
+    public void displayInfo() {
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+    }
+
+    // Main method to test the Book class
+    public static void main(String[] args) {
+        Book myBook = new Book("To Kill a Mockingbird", "Harper Lee");
+        myBook.displayInfo();
+    }
+}
